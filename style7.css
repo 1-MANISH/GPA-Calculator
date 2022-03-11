@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Supermercado One', cursive;
+}
+.container{
+
+    background: black;
+    width: 90vw;
+    height: 20vh;
+    margin: 34px auto;
+    display: flex;
+    justify-content: center;
+
+}
+h2{
+    margin-top: 12px;
+    color: aliceblue;
+}
+#inputs{
+    position: absolute;
+    margin:52px 34px;
+}
+input[type="text"]{
+    padding: 10px;
+    font-family: 'Supermercado One', cursive;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+}
+input[type="text"]:hover{
+    background-color: darkorange;
+}
+input[type="button"]{
+    padding: 10px;
+    font-family: 'Supermercado One', cursive;
+    font-size: 1.2rem;
+    background-color: rgb(199, 230, 217);
+    border: none;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: rgb(73, 91, 84);
+}
+#rejult{
+
+    background-color: rgb(182, 209, 239);
+    width: 90vw;
+    /* height: 50vh; */
+    margin: 34px auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 0;
+
+}
+table{
+    margin: 12px;
+    width: 90vh;
+    height: screen-height;
+    /* border: 2px solid rgb(4, 3, 3); */
+}
+th,td{
+    text-align: center;
+    font-size: 1.2rem;
+    height: 32px;
+    width: 20%;
+}
+th{
+    background-color: darkred;
+    color: white;
+}
+td{
+    background-color: rgb(181, 170, 172);
+}
+
+#cgpa{
+    width: 90vw;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Supermercado One', cursive;
+    font-size: 1.4rem;
+    background-color: rgb(182, 209, 239);
+}
+
+@media all and (max-width:1000px){
+    h2{
+        position: fixed;
+        top: 34px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    #inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #inputs input{
+        margin: 2px 0px;
+    }
+}

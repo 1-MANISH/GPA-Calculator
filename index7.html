@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA & CGPA Calculations</title>
+    <link rel="stylesheet" href="CSS/style7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Supermercado+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>CGPA & GPA calculator</h2>
+        <form id="inputs" name="inputs">
+            <input type="text" id="NOS" name="nameofsubject" placeholder="Enter subject name" required>
+            <input type="text" id="credit" name="credit" placeholder="Enter credit of subject" required>
+            <input type="text" id="marks" name="marks" placeholder="Enter subject marks" required>
+            <input type="button" id="btn" value="Enter/Save" onclick="calculation()">
+        </form>
+    </div>
+    <div id="rejult">
+        <table border="1" id="output"  cellpadding="5" cellspacing="5" style="border-collapse: collapse;">
+            <tr>
+                <th>Name of Subject</th>
+                <th>Credit</th>
+                <th>Marks obtained</th>
+                <th>Grade</th>
+            </tr>
+        </table>
+    </div>
+    <div id="cgpa">
+        <p id="cg">GPA : </p>
+        <p id="ans">0</p>
+    </div>
+    <script src="JS/script7.js"></script>
+</body>
+</html>
